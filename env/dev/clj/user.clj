@@ -2,6 +2,7 @@
   "Userspace functions you can run by default in your local REPL."
   (:require
    [dog-book.config :refer [env]]
+   [dog-book.db.core :as db]
     [clojure.pprint]
     [clojure.spec.alpha :as s]
     [expound.alpha :as expound]
@@ -64,4 +65,11 @@
 (comment
   (start)
   (migrate)
+
+  (db/create-user!
+   {:id 1
+    :first-name "Gab"
+    :last-name "Luch"
+    :email "gab@gab.gab"
+    :pass "123456"})
   ,)

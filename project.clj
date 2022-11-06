@@ -5,6 +5,7 @@
 
   :dependencies [[ch.qos.logback/logback-classic "1.2.11"]
                  [clojure.java-time "0.3.3"]
+                 [camel-snake-kebab "0.4.3"]
                  [conman "0.9.5"]
                  [cprop "0.1.19"]
                  [expound "0.9.0"]
